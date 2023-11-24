@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <input
+        class="search"
+        type="text"
+        name="City Name"
+        placeholder="Search City"
+        id="search-city"
+      />
+      <input class="search" type="button" value="Search" id="search-btn" onclick="getWeather()" />
+
+      <div class="info-container">
+        <div class="outer-info-container">
+        <div class="text-container"><article>City Name: </article> <article id="cname"></article></div>
+        <div class="text-container"><article>Weather: </article> <article id="weather" ></article></div>
+        <div class="text-container"><article>Description: </article> <article id="description"></article></div>
+        <div class="text-container"><article>Temperature: </article> <article id="temperature"></article></div>
+        </div>
+        <div id="weather-icon">
+        </div>
+      </div>
+      <article id="not-found"></article>
+      <div >
+        <img src="wait.gif" alt="" id="loader">
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
